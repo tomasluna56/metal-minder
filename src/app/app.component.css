@@ -1,0 +1,42 @@
+
+.toolbar {
+    background-color: #1262AD;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .p-toolbar-group-left{
+    margin: 0;
+    padding: 0;
+    background-color: #1262AD;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+
+  .logo {
+    width: 60px; 
+    height: 60px;
+    margin-right: 20px;
+  }
+  
+  .title {
+    font-size: 30px; 
+    font-family: 'PlayPretend', sans-serif;
+    color: #ffffff;
+    margin-right: 20px;
+  }
+  
+  .navegacion {
+    margin-right: 10px; 
+    border: none;
+    background-color: transparent;
+  }
+  
+  .p-menubar.p-component {
+    background-color: #1262AD; 
+    border: none;
+  }

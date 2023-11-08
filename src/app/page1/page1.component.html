@@ -1,0 +1,49 @@
+<div class="descripcion">
+    
+    <label>
+        Calcular cantidad de material requerido y cantidad de desperdicio
+    </label>
+    
+    </div>
+
+
+    
+    <div class="container">
+        <div class="material">
+
+            <select class="combo-box" id="combo1">
+                <option *ngFor="let option of materialOptions" [value]="option">{{ option }}</option>
+            </select>
+
+
+            <input type="number"  pInputText class="textbox" id="length1" placeholder="Largo (cm)" min="1">
+            <input type="number"  pInputText class="textbox" id="quantity1" placeholder="Cantidad" min="1">
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="material">
+            <select class="combo-box" id="combo2">
+                <option *ngFor="let option of materialOptions" [value]="option">{{ option }}</option>
+              </select>
+              
+            <input type="number"  pInputText class="textbox" id="length2" placeholder="Largo (cm)" min="1">
+            <input type="number"  pInputText class="textbox" id="quantity2" placeholder="Cantidad" min="1">
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="material">
+            <select class="combo-box" id="combo3">
+                <option *ngFor="let option of materialOptions" [value]="option">{{ option }}</option>
+              </select>
+              
+            <input type="number"  pInputText class="textbox" id="length3" placeholder="Largo (cm)" min="1">
+            <input type="number"  pInputText class="textbox" id="quantity3" placeholder="Cantidad" min="1">
+        </div>
+    </div>
+    
+    <div class="calcular_container">
+        <p-button label="Calcular" size="large" class="calcular"  (click)="calcular()">
+        </p-button>
+    </div>
